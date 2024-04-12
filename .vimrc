@@ -101,3 +101,6 @@ nnoremap <leader>q :q <CR>
 " ===============
 nnoremap <leader>cf :action ReformatCode<CR>
 nnoremap <leader>pcf :action Tool_External Tools_PHP CS Fixer<CR>
+
+set number                     " Show current line number
+set relativenumber             " Show relative line number
