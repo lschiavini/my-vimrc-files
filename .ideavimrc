@@ -10,10 +10,22 @@ nnoremap <Leader>/ :nohlsearch<cr>
 imap jj <Esc>
 imap jk <Esc>
 
+nnoremap <C-b> <Nop>
+nnoremap <C-f> <Nop>
+
+nnoremap J 5j
+nnoremap K 5k
+
+nnoremap <leader>J J
+
+nnoremap <leader>P "_dP
+
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
 " When in normal mode and I hit Enter,
 " then save file please
 nmap <CR> :action ReformatCode<CR> :write<CR>
-nnoremap <Leader>F  :action ReformatCode<CR> :write<CR>
 
 " Quick window navigation
 map <C-J> <C-W>j
@@ -128,3 +140,7 @@ map <leader>x :action $Cut<CR>
 map <leader>y :action EditorDeleteLine<CR>
 map <leader>[ :action EditorCodeBlockStart<CR>
 map <leader>] :action EditorCodeBlockEnd<CR>
+
+set number                     " Show current line number
+set relativenumber             " Show relative line numbers
+
